@@ -36,6 +36,7 @@ const mailSender = async(email,title,body) => {
         return response;
     } catch (error) {
         console.log("Error in mailSender: ", error);
+        return error;
     }
 }
 
